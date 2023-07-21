@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="title"><b>Survey Form</b></h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </header>
+  <div class="container">
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name<span>(required)</span></label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email<span>(required)</span></label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required>
+      </div>
+      <div class="form-group">
+        <label for="age" id="number-label">Age<span>(optional)</span></label>
+        <input type="number" name="age" id="number" class="form-control" placeholder="Age" min="10" max="99">
+      </div>
+      <div class="form-group">
+        <label for="role">Which option best describes your current role?</label>
+        <select name="role" id="dropdown" required>
+          <option disabled selected value>Select current role</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Would you recommend this to a friend?</p>
+        <label><input name="user-recommend" value="definitely" type="radio" checked>Definitely</label>
+        <label><input name="user-recommend" value="maybe" type="radio">Maybe</label>
+        <label><input name="user-recommend" value="not-sure" type="radio">Not sure</label>
+      </div>
+      <div class="form-group">
+        <p>What is your favorite feature?</p>
+        <select name="mostLike" required>
+          <option disabled selected value>Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="openSource">Open Source</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>What would you like to see improved?<span>(Check all that apply)</span></p>
+        <label><input name="prefer" value="front-end-projects" type="checkbox">Front-end Projects</label>
+        <label><input name="prefer" value="back-end-projects" type="checkbox">Back-end Projects</label>
+        <!-- Add more options here -->
+      </div>
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea name="comment" class="form-control" placeholder="Enter your comment here..."></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
