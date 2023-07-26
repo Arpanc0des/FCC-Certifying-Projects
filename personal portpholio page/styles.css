@@ -1,0 +1,170 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Navigation */
+.nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list li:last-child {
+  margin-right: 0;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.nav-list a:hover {
+  background-color: #555;
+}
+
+/* Welcome Section */
+.welcome-section {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.welcome-section h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.welcome-section p {
+  font-size: 24px;
+  color: #666;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.projects-section-header {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Creates a grid with a minimum column width of 200px */
+  grid-gap: 20px;
+}
+
+.project-tile {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-title {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.code {
+  color: #8a2be2;
+}
+
+.btn-show-all {
+  display: block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #333;
+}
+
+.btn-show-all:hover {
+  color: #8a2be2;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.contact-section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-links .btn {
+  margin: 10px;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #333;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.contact-links .btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #8a2be2;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
